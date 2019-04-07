@@ -8,5 +8,7 @@ gameInit();
     roundScore=0;
     totalScore=[0,0];
     goal=100;
+    document.getElementByID("dice1").textContent="";
+    
 
   }
