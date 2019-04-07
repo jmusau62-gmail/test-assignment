@@ -11,4 +11,9 @@ gameInit();
     document.getElementById("dice1").textContent="";
     document.getElementById("dice2").textContent="";
 
+    document.getElementById("total-0").textContent=totalScore[0];
+    document.getElementById('total-1').textContent=totalScore[1];
+
+    document.getElementById("dice1")
+
   }
