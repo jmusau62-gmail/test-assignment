@@ -8,12 +8,17 @@ gameInit();
     roundScore=0;
     totalScore=[0,0];
     goal=100;
+
+
     document.getElementById("dice1").textContent="";
     document.getElementById("dice2").textContent="";
 
-    document.getElementById("total-0").textContent=totalScore[0];
-    document.getElementById('total-1').textContent=totalScore[1];
 
-    document.getElementById("dice1")
+     document.getElementById("current-score-0").textContent= roundScore;
+     document.getElementById("current-score-1").textContent= roundScore;
+
+    document.getElementById("total-0").textContent= totalScore[0];
+    document.getElementById('total-1').textContent= totalScore[1];
+
 
   }
