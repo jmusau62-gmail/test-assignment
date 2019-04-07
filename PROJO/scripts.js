@@ -23,5 +23,8 @@ gameInit();
     document.getElementById("dice1").textContent= "";
     document.getElementById("dice2").textContent= "";
 
+    document.getElementById("payer-label-0").textContent = "Player 1";
+    document.getElementById("player-label-0").classList.remove("font-red");
+
 
   }
