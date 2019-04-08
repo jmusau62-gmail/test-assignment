@@ -54,12 +54,23 @@ if(gamePlay) {
  document.getElementById("dice1").textContent=dice1;
  document.getElementById("dice2").textContent=dice2;
 
-//4. Check wheather  either dice rolled a 1
+//4. Check whether  either dice rolled a 1
 if (dice1===1 || dice2=== 1) {
   nextPlyer();
 }
 
-//
+//5. Check if previous roll for either dice was a 6 and compare whether current roll for either dice is a 6.
+if (previousDice1 === 6 && dice1 ===6 || previousDice2 ===6 && dice2 === 6){
+  (player===0)? totalScore[player]=0 : totalScore [player]=0;
+  document.getElementById("total-"+player).textContent =
+totalScore[player];
+  nextPlayer();
+}else{
+  previousDice1= dice1;
+  previousDice2= dice2;
+
 }
 }
+});
+d
   }
