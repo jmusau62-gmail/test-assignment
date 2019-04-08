@@ -37,6 +37,16 @@ gameInit();
     }
 
 document.getElementById("roll").addEventListener("click",function(){
-  
+
+if(gamePlay) {
+
+
+  // 1. Roll the dice and record previously rolled number by a Player
+  var dice1=Math.floor(Math.random()*6)+1;
+  var dice2=Math.floor(Math.random()*6)+1;
+
+  //2. Update respective roundScore
+
+}
 }
   }
