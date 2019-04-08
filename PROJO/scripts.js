@@ -31,9 +31,12 @@ gameInit();
 
     document.getElementById("plyer-0").classList.remove("active");
     document.getElementById("player-1").classList.remove("active");
+
     document.getElementById("player-"+ player).classList.add("active");
 
     }
 
-
+document.getElementById("roll").addEventListener("click",function(){
+  
+}
   }
