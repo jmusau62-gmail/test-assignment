@@ -85,7 +85,15 @@ document.getElementById("hold").addEventListener("click", function(){
       totalScore[player];
       document.getElementById("player-label-"+player).textContent=
       "WINNER!!!";
+      document.getElementById("player-label-"+player).classList.add("font-red");
+      gamePlay=false;
+    }else{
+      document.getElelmentById("total-"+player).textContent = totalScore[player];
+      nextPlayer();
     }
+    // 3. Clear dice
+    document.getElementById("dice1").textContent="";
+    document.getElementById("dice2").textContent="";
   }
 })
   }
