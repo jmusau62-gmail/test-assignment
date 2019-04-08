@@ -49,7 +49,11 @@ if(gamePlay) {
  roundScore += dice1 + dice2;
  document.getElementById("dice1").textContent=dice1;
  document.getElementById("dice2").textContent=dice2;
- 
+
+ //3.Display numbers on their respective dice
+ document.getElementById("dice1").textContent=dice1
+ document.getElementById("dice2").textContent=dice2;
+
 }
 }
   }
