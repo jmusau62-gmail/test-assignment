@@ -29,6 +29,10 @@ gameInit();
     document.getElementById("player-label-1").textContent="Player 2";
     document.getElementById("player-label-1").classList.remove ("front-red");
 
+    document.getElementById("plyer-0").classList.remove("active");
+    document.getElementById("player-1").classList.remove("active");
+    document.getElementById("player-"+ player).classList.add("active");
+
     }
 
 
