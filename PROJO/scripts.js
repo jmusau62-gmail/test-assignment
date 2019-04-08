@@ -72,5 +72,9 @@ totalScore[player];
 }
 }
 });
-d
+document.getElementById("hold").addEventListener("click", function(){
+  if(gamePlay){
+    
+  }
+})
   }
