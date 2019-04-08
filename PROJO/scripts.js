@@ -46,7 +46,10 @@ if(gamePlay) {
   var dice2=Math.floor(Math.random()*6)+1;
 
   //2. Update respective roundScore
-
+ roundScore += dice1 + dice2;
+ document.getElementById("dice1").textContent=dice1;
+ document.getElementById("dice2").textContent=dice2;
+ 
 }
 }
   }
