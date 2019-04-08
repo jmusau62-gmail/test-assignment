@@ -94,6 +94,18 @@ document.getElementById("hold").addEventListener("click", function(){
     // 3. Clear dice
     document.getElementById("dice1").textContent="";
     document.getElementById("dice2").textContent="";
+
   }
-})
+});
+
+function nextPlayer() {
+  roundScore =0;
+  document.getElementById("current-score-"+ player).textContent =
+  roundScore;
+  document.getElementById("player-"+player).classsList.remove ("active");
+  (player === 0)? player =1 : player =0 ;
+  document.getElementById("player-"+player).classList.add("active");
+  document.getElementById("dice1").textContent= "";
+  document.getElementById("dice2").textContent="";
+}
   }
