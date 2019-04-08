@@ -51,9 +51,15 @@ if(gamePlay) {
  document.getElementById("dice2").textContent=dice2;
 
  //3.Display numbers on their respective dice
- document.getElementById("dice1").textContent=dice1
+ document.getElementById("dice1").textContent=dice1;
  document.getElementById("dice2").textContent=dice2;
 
+//4. Check wheather  either dice rolled a 1
+if (dice1===1 || dice2=== 1) {
+  nextPlyer();
+}
+
+//
 }
 }
   }
