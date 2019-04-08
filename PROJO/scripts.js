@@ -72,9 +72,20 @@ totalScore[player];
 }
 }
 });
+
 document.getElementById("hold").addEventListener("click", function(){
   if(gamePlay){
-    
+
+    // 1.Round score gets added to totalScore and round score is cleared
+    totalScore[player] += roundScore;
+
+    // 2. Check if total score of a player is greater than the goal and update accordingly
+    if (totalScore[player]>=goal) {
+      document.getElementById("total-"+player).textContent =
+      totalScore[player];
+      document.getElementById("player-label-"+player).textContent=
+      "WINNER!!!";
+    }
   }
 })
   }
