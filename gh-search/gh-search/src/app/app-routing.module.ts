@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {CommonModule} from '@angular/common';
+import {GitFormComponent} from './git-form/git-form.component'
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [CommonModule,RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
